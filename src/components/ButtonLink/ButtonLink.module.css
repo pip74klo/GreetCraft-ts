@@ -1,0 +1,16 @@
+.button {
+  background-color: #59827c;
+  color: wheat;
+  padding: 0.5rem 1.375rem;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.button:hover {
+  background-color: wheat;
+  color: saddlebrown;
+  border-color: saddlebrown;
+}
