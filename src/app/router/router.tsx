@@ -1,5 +1,12 @@
+import { lazy } from 'react';
+
 import { createBrowserRouter } from 'react-router-dom';
-import BaseLayout from '../layouts/BaseLayout';
+
+const BaseLayout = lazy(() => import('../layouts/BaseLayout'));
+const HomePage = lazy(() => import('../../pages/HomePage/HomePage'));
+const NotFoundPage = lazy(
+  () => import('../../pages/NotFoundPage/NotFoundPage'),
+);
 
 export const router = createBrowserRouter([
   {
@@ -8,11 +15,11 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <div>HomePage</div>,
+        element: <HomePage />,
       },
       {
         path: '*',
-        element: <div>NotFoundPage</div>,
+        element: <NotFoundPage />,
       },
 
       // {
