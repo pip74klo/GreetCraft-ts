@@ -1,5 +1,7 @@
-const getNormalGreetingPrompt = (info) => {
-  const { holiday, settings, name, age, interests } = info;
+import type { GreetingData } from "../../slices/greetingDataSlice";
+
+const getNormalGreetingPrompt = (greetingData: GreetingData) => {
+  const { holiday, settings, name, age, interests } = greetingData;
   const { tone, language } = settings;
 
   return `
@@ -37,8 +39,8 @@ Generate the greeting now.
 `;
 };
 
-const getShortGreetingPrompt = (info) => {
-  const { holiday, settings, name, age, interests } = info;
+const getShortGreetingPrompt = (greetingData: GreetingData) => {
+  const { holiday, settings, name, age, interests } = greetingData;
   const { tone, language } = settings;
 
   return `
@@ -75,12 +77,12 @@ Generate the greeting now.
 `;
 };
 
-export const getGenerationPrompt = (info) => {
-  if (info.settings.length === "short") {
-    return getShortGreetingPrompt(info);
+export const getGenerationPrompt = (greetingData: GreetingData) => {
+  if (greetingData.settings.length === "short") {
+    return getShortGreetingPrompt(greetingData);
   }
 
-  return getNormalGreetingPrompt(info);
+  return getNormalGreetingPrompt(greetingData);
 
 }
 
