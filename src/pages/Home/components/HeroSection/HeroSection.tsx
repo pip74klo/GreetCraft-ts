@@ -1,7 +1,9 @@
-import ButtonLink from '../ButtonLink/ButtonLink';
+import styles from './HeroSection.module.css';
+
 import HeroGallery from '../HeroGallery/HeroGallery';
 import HeroText from '../HeroText/HeroText';
-import styles from './HeroSection.module.css';
+import ButtonLink from '../../../../components/ButtonLink/ButtonLink';
+
 
 const HeroSection = () => {
   return (

@@ -1,4 +1,4 @@
-import ButtonLink from '../../components/ButtonLink/ButtonLink';
+import ButtonLink from '../../../components/ButtonLink/ButtonLink';
 
 import styles from './NotFoundPage.module.css';
 

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
 
 import { House } from 'lucide-react';
@@ -7,34 +7,34 @@ import { SquarePen } from 'lucide-react';
 
 export const Header = () => {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <div className={styles.headerContainer}>
         <nav className={styles.nav}>
           <div className={styles.left}>
             <ul className={styles.list}>
               <li className={styles.item}>
-                <Link to={'/'}>
+                <NavLink to={'/'}>
                   <House />
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className={styles.item}>
-                <Link to={'/collection'}>
+                <NavLink to={'/collection'}>
                   <LibraryBig />
                   My collection
-                </Link>
+                </NavLink>
               </li>
               <li className={styles.item}>
-                <Link to={'/greeting'}>
+                <NavLink to={'/greeting'}>
                   <SquarePen />
                   Create
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
           <div className={styles.right}></div>
         </nav>
       </div>
-    </div>
+    </header>
   );
 };
