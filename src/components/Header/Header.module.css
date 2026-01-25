@@ -52,3 +52,64 @@ a[aria-current='page'] {
   background-color: wheat;
   color: saddlebrown;
 }
+
+@media (max-width: 600px) {
+  .header {
+    height: 80px;
+  }
+
+  .list {
+    gap: 1rem;
+  }
+
+  .item a {
+    font-size: 0.9rem;
+
+    gap: 10px;
+    padding: 5px 10px;
+  }
+
+  .nav {
+    padding: 0 1.5rem;
+  }
+
+  .homeImg,
+  .libraryBig,
+  .squarePen {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 455px) {
+  .list {
+    gap: 0.5rem;
+  }
+
+  .item a {
+    font-size: 0.9rem;
+
+    gap: 5px;
+    /* padding: 3px 8px; */
+  }
+
+  .nav {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .list {
+    gap: 0.5rem;
+  }
+  .item a {
+    font-size: 0.9rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .nav {
+    padding: 0 0.5rem;
+  }
+}

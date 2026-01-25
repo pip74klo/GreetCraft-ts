@@ -14,19 +14,19 @@ export const Header = () => {
             <ul className={styles.list}>
               <li className={styles.item}>
                 <NavLink to={'/'}>
-                  <House />
+                  <House className={styles.homeImg} />
                   Home
                 </NavLink>
               </li>
               <li className={styles.item}>
                 <NavLink to={'/collection'}>
-                  <LibraryBig />
+                  <LibraryBig className={styles.libraryBig} />
                   My collection
                 </NavLink>
               </li>
               <li className={styles.item}>
                 <NavLink to={'/greeting'}>
-                  <SquarePen />
+                  <SquarePen className={styles.squarePen} />
                   Create
                 </NavLink>
               </li>
