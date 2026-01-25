@@ -1,0 +1,17 @@
+.flexGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.holiday {
+  grid-column: span 2 / span 2;
+}
+
+.recipient {
+  grid-row-start: 2;
+}
+
+.settings {
+  grid-row-start: 2;
+}

@@ -1,8 +1,8 @@
 export const HOLIDAYS = {
-  BIRTHDAY: 'День рождения',
-  NEW_YEAR: 'Новый год',
-  WOMANS_DAY: '8 марта',
-  WEDDING: 'Свадьба',
+  BIRTHDAY: 'birthday',
+  NEW_YEAR: 'new year',
+  WOMANS_DAY: '8 march',
+  WEDDING: 'wedding',
 } as const;
 
 export type HolidayName = (typeof HOLIDAYS)[keyof typeof HOLIDAYS];

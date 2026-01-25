@@ -1,11 +1,11 @@
 import styles from './HeroGallery.module.css';
 
-import img_1 from '../../assets/images/gallery/image_1.jpg';
-import img_2 from '../../assets/images/gallery/image_2.jpg';
-import img_3 from '../../assets/images/gallery/image_3.jpg';
-import img_5 from '../../assets/images/gallery/image_5.jpg';
-import img_4 from '../../assets/images/gallery/image_4.jpg';
-import img_6 from '../../assets/images/gallery/image_6.jpg';
+import img_1 from '../../../../assets/images/gallery/image_1.jpg';
+import img_2 from '../../../../assets/images/gallery/image_2.jpg';
+import img_3 from '../../../../assets/images/gallery/image_3.jpg';
+import img_5 from '../../../../assets/images/gallery/image_5.jpg';
+import img_4 from '../../../../assets/images/gallery/image_4.jpg';
+import img_6 from '../../../../assets/images/gallery/image_6.jpg';
 
 const HeroGallery = () => {
   return (
@@ -37,7 +37,7 @@ const HeroGallery = () => {
         <p className={styles.itemDescription}>Happy New Year</p>
       </div>
     </div>
-  );
+  )
 };
 
 export default HeroGallery;

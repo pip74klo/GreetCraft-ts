@@ -33,7 +33,6 @@
 
 .item {
   display: flex;
-  padding: 5px 10px;
   transition: all 0.2s ease-in-out;
 }
 .item a {
@@ -41,9 +40,15 @@
   font-size: 1.125rem;
   font-weight: 700;
   gap: 10px;
+  padding: 5px 10px;
 }
 
 .item:hover {
+  background-color: wheat;
+  color: saddlebrown;
+}
+
+a[aria-current='page'] {
   background-color: wheat;
   color: saddlebrown;
 }

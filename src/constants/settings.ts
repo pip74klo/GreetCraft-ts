@@ -1,8 +1,8 @@
 export const SETTINGS = {
   TONE: {
-    FORMAL: 'Официальный',
-    HUMOROUS: 'Юмористический',
-    ROMANTIC: 'Романтический',
+    OFFICIAL: 'official',
+    HUMOROUS: 'humorous',
+    ROMANTIC: 'romantic',
   },
   LANGUAGE: {
     RU: 'ru',

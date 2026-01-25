@@ -14,7 +14,7 @@ interface GreetSettings {
   length: SettingsLengthType;
 }
 
-interface GreetingData {
+export interface GreetingData {
   holiday: HolidayName;
   name: string;
   age: string;
@@ -23,12 +23,12 @@ interface GreetingData {
 }
 
 const initialState: GreetingData = {
-  holiday: 'День рождения',
+  holiday: 'birthday',
   name: '',
   age: '',
   interests: '',
   settings: {
-    tone: 'Официальный',
+    tone: 'official',
     language: 'ru',
     length: 'short',
   },
