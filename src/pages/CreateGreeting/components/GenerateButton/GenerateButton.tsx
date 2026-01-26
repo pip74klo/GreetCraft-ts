@@ -2,6 +2,7 @@
 import { useAppDispatch, useAppSelector } from '../../../../app/providers/store/store';
 
 import { saveToHistory, setGeneratedGreeting } from '../../../../slices/generationSlice';
+import { formatPoetry } from '../../../../utils/helpers/formatPoetry';
 import { getGenerationPrompt } from '../../../../utils/helpers/getGenerationPrompt';
 import useGenerationGreeting from '../../../../utils/hooks/useGenerationGreeting';
 
@@ -14,13 +15,17 @@ import { WandSparkles } from 'lucide-react';
 const GenerateButton = () => {
   const dispatch = useAppDispatch()
   const data = useAppSelector(state => state.greetingData)
+
   const { loading, generationGreeting, error } = useGenerationGreeting()
 
   const onGenerate = async () => {
     const dataPrompt = getGenerationPrompt(data);
-    const response = await generationGreeting(dataPrompt);
+    let response = await generationGreeting(dataPrompt);
 
     if (response) {
+      if (data.settings.tone === 'poetry') {
+        response = formatPoetry(response)
+      }
       dispatch(setGeneratedGreeting(response))
       dispatch(saveToHistory(response))
     }

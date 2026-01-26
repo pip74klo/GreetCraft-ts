@@ -1,4 +1,5 @@
 import type { GreetingData } from "../../slices/greetingDataSlice";
+import { getPoetryRules } from "./getPoetryRules";
 
 const getNormalGreetingPrompt = (greetingData: GreetingData) => {
   const { holiday, settings, name, age, interests } = greetingData;
@@ -18,6 +19,8 @@ Greeting details:
 - Age: ${age || "not specified"}
 - Interests: ${interests || "not specified"}
 - Tone: ${tone}
+
+${tone === "poetry" ? getPoetryRules("short") : ""}
 
 Length rules (STRICT):
 - medium: 2-3 sentences.
@@ -48,7 +51,7 @@ You are a professional greeting card writer.
 
 STRICT RULES (NO EXCEPTIONS):
 - Write ONLY in ${language}.
-- Output MUST be EXACTLY ONE sentence.
+-${tone === "poetry" ? getPoetryRules("short") : "Output MUST be EXACTLY ONE sentence."}
 - The sentence MUST end with punctuation (. ! or ?).
 - Do NOT use line breaks.
 - Do NOT use lists.
