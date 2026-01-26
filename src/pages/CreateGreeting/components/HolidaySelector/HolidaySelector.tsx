@@ -23,7 +23,7 @@ const HolidaySelector = () => {
 
   return (
     <section className={styles.holidaySelector}>
-      <p className={styles.title}>1. Выберите праздник:</p>
+      <p className={styles.title}>1. Choose a holiday</p>
       <SelectionButtonsList
         optionsArray={holidayNamesList}
         currentValue={holiday}

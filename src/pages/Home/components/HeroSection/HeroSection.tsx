@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <div className={styles.heroSection}>
       <HeroText />
-      <ButtonLink to={'/greeting'}>Начать</ButtonLink>
+      <ButtonLink to={'/greeting'}>Get started</ButtonLink>
       <HeroGallery />
     </div>
   );

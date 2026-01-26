@@ -10,7 +10,7 @@ import GreetingPreview from '../components/GreetingPreview/GreetingPreview';
 const CreateGreetingPage = () => {
   return (
     <div className={styles.greetingPage}>
-      <h2>Создайте уникальное поздравление</h2>
+      <h2 className={styles.title}>Create a unique greeting quickly and easily</h2>
       <div className={styles.flexGrid}>
         <div className={styles.holiday}>
           <HolidaySelector />

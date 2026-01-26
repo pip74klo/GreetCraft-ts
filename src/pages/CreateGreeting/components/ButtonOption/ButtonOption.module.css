@@ -1,5 +1,6 @@
 button {
-  background-color: wheat;
+  /* background-color: wheat; */
+  background-color: #fdf9ef;
   color: saddlebrown;
   border-color: saddlebrown;
   padding: 0.5rem 1.375rem;
@@ -10,7 +11,16 @@ button {
 
 button:hover,
 .active {
-  background-color: #b35903;
+  /* background-color: #b35903; */
+  background-color: wheat;
   border-color: #b35903;
-  color: bisque;
+  /* color: bisque; */
+  color: saddlebrown;
+}
+
+@media (max-width: 560px) {
+  button {
+    padding: 0.3rem 1rem;
+    font-size: 15px;
+  }
 }
