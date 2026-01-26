@@ -3,6 +3,7 @@ export const SETTINGS = {
     OFFICIAL: 'official',
     HUMOROUS: 'humorous',
     ROMANTIC: 'romantic',
+    Poetry: 'poetry'
   },
   LANGUAGE: {
     RU: 'ru',
