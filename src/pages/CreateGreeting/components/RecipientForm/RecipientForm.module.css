@@ -1,0 +1,113 @@
+.recipientForm {
+  /* background-color: #fdf9ef; */
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  height: 100%;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: saddlebrown;
+  padding: 3px;
+  border-bottom: 1px solid saddlebrown;
+  display: inline;
+}
+
+.formInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.infoBlock {
+  max-width: 350px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.infoBlock label {
+  font-size: 18px;
+  font-weight: 500;
+  color: saddlebrown;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 7px;
+  background-color: #fdf9ef;
+  /* background-color: #f2f1ec; */
+  /* background-color: wheat; */
+  color: saddlebrown;
+  border-radius: 10px;
+  border: 1px solid saddlebrown;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.input:focus,
+.textarea:focus {
+  background-color: wheat;
+  border: 1px solid saddlebrown;
+  box-shadow: 0 0 0 1px saddlebrown;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: rgb(136, 111, 94);
+}
+
+.full {
+  background-color: wheat;
+}
+
+.infoTop {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.infoTopItem {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 560px) {
+  .formInfo {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .recipientForm {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .infoTopItem label {
+    font-size: 16px;
+  }
+
+  .infoBlock input::placeholder,
+  .infoBlock textarea::placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .infoTop {
+    gap: 10px;
+    /* flex-wrap: wrap; */
+  }
+}

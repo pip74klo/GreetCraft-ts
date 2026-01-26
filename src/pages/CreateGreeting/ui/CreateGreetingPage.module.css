@@ -1,0 +1,46 @@
+.title {
+  padding: 15px;
+}
+
+.flexGrid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'holiday holiday'
+    'recipient settings';
+}
+
+.holiday {
+  grid-area: holiday;
+}
+
+.recipient {
+  grid-area: recipient;
+}
+
+.settings {
+  grid-area: settings;
+}
+
+@media (max-width: 830px) {
+  .flexGrid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'holiday'
+      'recipient'
+      'settings';
+  }
+
+  .holiday {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+  }
+}

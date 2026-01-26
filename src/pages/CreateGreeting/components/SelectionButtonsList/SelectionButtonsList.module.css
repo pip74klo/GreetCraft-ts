@@ -1,0 +1,29 @@
+.selectionButtons {
+  padding-top: 15px;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 500;
+  color: saddlebrown;
+  padding-bottom: 2px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 510px) {
+  .selectionButtons {
+    padding-top: 10px;
+  }
+  .buttons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .label {
+    font-size: 16px;
+  }
+}

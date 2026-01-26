@@ -1,0 +1,16 @@
+.heroSection {
+  padding: 50px 0;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .heroSection {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroSection {
+    padding: 20px 0;
+  }
+}
