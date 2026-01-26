@@ -12,7 +12,7 @@ const client = new OpenAI({
 export const generationApi = async (dataPrompt: string) => {
   try {
     const response = await client.chat.completions.create({
-      model: 'xiaomi/mimo-v2-flash:free',
+      model: 'deepseek/deepseek-r1-0528:free',
       messages: [
         {
           role: 'user' as const,
