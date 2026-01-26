@@ -1,5 +1,5 @@
 .holidaySelector {
-  background-color: #fdf9ef;
+  /* background-color: #fdf9ef; */
   padding: 25px;
   border-radius: 20px;
   box-shadow:
@@ -14,4 +14,14 @@
   padding: 3px;
   border-bottom: 1px solid saddlebrown;
   display: inline;
+}
+
+@media (max-width: 450px) {
+  .holidaySelector {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
 }

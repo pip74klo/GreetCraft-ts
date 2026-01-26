@@ -5,9 +5,9 @@ const HeroText = () => {
     <>
       <h1
         className={styles.title}
-      >{`GreetCraft это уникальные поздравления`}</h1>
+      >{`GreetCraft is unique greetings`}</h1>
       <p className={styles.description}>
-        {`Создавайте красивые и искренние поздравления для близких c помощью инструмента на основе искусственного интеллекта — всего за пару кликов.`}
+        {`Create beautiful and heartfelt greetings for your loved ones with this AI-powered tool — in just a few clicks..`}
       </p>
     </>
   );

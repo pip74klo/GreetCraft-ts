@@ -8,10 +8,10 @@ const GreetingPreview = () => {
 
   return (
     <div className={styles.greetingPreview}>
-      <h2>Preview</h2>
-      <p className={styles.greet}>
-        {generatedGreeting ? generatedGreeting : 'Здесь будет сгенерированное поздравление'}
-      </p>
+      <h2 className={styles.title}>Your congratulations!</h2>
+      <div className={styles.greet}>
+        {generatedGreeting ? <p className={styles.congratulations}>{generatedGreeting}</p> : 'Здесь будет сгенерированное поздравление'}
+      </div>
 
     </div>
   )

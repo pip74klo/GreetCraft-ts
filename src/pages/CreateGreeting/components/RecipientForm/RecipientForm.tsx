@@ -37,15 +37,16 @@ const RecipientForm = () => {
 
   return (
     <section className={styles.recipientForm}>
-      <p className={styles.title}>2. Получатель: </p>
+      <p className={styles.title}>2. Who is it for ?</p>
       <div className={styles.formInfo}>
         <div className={styles.infoBlock}>
           <div className={styles.infoTop}>
             <div className={styles.infoTopItem}>
-              <label>Имя</label>
+              <label>Name</label>
               <input
+                className={`${styles.input} ${name.length > 0 ? styles.full : ''}`}
                 type='text'
-                placeholder={'Иван'}
+                placeholder={'Ivan'}
                 value={name}
                 required
                 onChange={(e) => onChangeName(e.target.value)}
@@ -53,8 +54,9 @@ const RecipientForm = () => {
             </div>
 
             <div className={styles.infoTopItem}>
-              <label>Возраст</label>
+              <label>Age</label>
               <input
+                className={`${styles.input} ${age.length > 0 ? styles.full : ''}`}
                 type='number'
                 value={age}
                 min={1}
@@ -67,11 +69,12 @@ const RecipientForm = () => {
         </div>
 
         <div className={styles.infoBlock}>
-          <label>Интересы</label>
+          <label>Hobbies and interests</label>
           <textarea
+            className={`${styles.textarea} ${interests.length > 0 ? styles.full : ''}`}
             rows={3}
             value={interests}
-            placeholder='Путешествие, теннис, фильмы...'
+            placeholder='Travel, tennis, movies...'
             onChange={(e) => onChangeInterest(e.target.value)}
           />
         </div>

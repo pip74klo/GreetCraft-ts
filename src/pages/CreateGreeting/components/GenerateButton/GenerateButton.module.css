@@ -1,6 +1,6 @@
 .generateButton {
   margin-top: 10px;
-  background-color: #fdf9ef;
+  /* background-color: #fdf9ef; */
   padding: 25px;
   border-radius: 20px;
   box-shadow:
@@ -19,8 +19,8 @@
 
 .button[disabled] {
   cursor: not-allowed;
-  background-color: #b35903;
-  color: wheat;
+  background-color: wheat;
+  color: #b35903;
 }
 
 .wand {
@@ -50,4 +50,10 @@
 .error {
   padding-top: 10px;
   color: rgb(228, 13, 13);
+}
+
+@media (max-width: 450px) {
+  .generateButton {
+    padding: 15px;
+  }
 }

@@ -1,6 +1,6 @@
 .greetingPreview {
   margin-top: 10px;
-  background-color: #fdf9ef;
+  /* background-color: #fdf9ef; */
   padding: 25px;
   border-radius: 20px;
   box-shadow:
@@ -8,11 +8,49 @@
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-h2 {
+.title {
   color: saddlebrown;
 }
 
 .greet {
   font-size: 22px;
+}
+
+.congratulations {
+  background-color: #f3e9d0;
   padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .greet {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 450px) {
+  .greetingPreview {
+    padding: 15px;
+  }
+  .greet {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .greet {
+    font-size: 15px;
+  }
+
+  .title {
+    font-size: 19px;
+  }
 }

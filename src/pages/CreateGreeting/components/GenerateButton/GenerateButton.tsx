@@ -34,8 +34,9 @@ const GenerateButton = () => {
         disabled={loading}
       >
         <WandSparkles className={loading ? styles.wand : ''} />
-        {loading ? "Генерирую" : 'Сгенерировать'}</button>
-      <h3 className={styles.error}>{error}</h3>
+        {loading ? "Generating" : 'Generate'}</button>
+      {error && <h3 className={styles.error}>{error}</h3>}
+
     </div>
   )
 }

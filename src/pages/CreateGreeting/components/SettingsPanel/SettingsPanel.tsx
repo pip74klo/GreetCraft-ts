@@ -27,16 +27,19 @@ const SettingsPanel = () => {
 
   return (
     <section className={styles.settingsPanel}>
-      <p className={styles.title}>3. Настройки </p>
+      <p className={styles.title}>3. Settings </p>
       <SelectionButtonsList
+        label={'Tone'}
         optionsArray={toneOptionsList}
         currentValue={tone}
         onChange={onChangeTone} />
       <SelectionButtonsList
+        label={'Language'}
         optionsArray={languagesOptionsList}
         currentValue={language}
         onChange={onChangeLanguage} />
       <SelectionButtonsList
+        label={'Length'}
         optionsArray={lengthOptionsList}
         currentValue={length}
         onChange={onChangeLength} />
