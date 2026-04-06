@@ -1,7 +1,7 @@
 import OpenAI from 'openai';
 
-const API_KEY = import.meta.env.VITE_OPEN_ROUTER_API_KEY
-const BASE_URL = import.meta.env.VITE_BASE_URL
+const API_KEY = import.meta.env.VITE_OPEN_ROUTER_API_KEY;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const client = new OpenAI({
   baseURL: BASE_URL,
@@ -12,7 +12,7 @@ const client = new OpenAI({
 export const generationApi = async (dataPrompt: string) => {
   try {
     const response = await client.chat.completions.create({
-      model: 'deepseek/deepseek-r1-0528:free',
+      model: 'openai/gpt-oss-120b:free',
       messages: [
         {
           role: 'user' as const,
